@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#ededed"
+    android:elevation="20dp"
+    >
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/softwarica"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColorHint="#404040"
+        android:hint="Name of Student"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/delete"
+        android:gravity="center"
+        android:hint="Edit"
+        android:background="#2554b4"
+        android:textColorHint="#fff"
+        android:layout_toEndOf="@+id/name"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_below="@+id/name"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColorHint="#404040"
+        android:hint="Age of Student"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_below="@+id/age"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColorHint="#404040"
+        android:hint="Address of Student"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:layout_toEndOf="@+id/address"
+        android:layout_below="@+id/age"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColorHint="#404040"
+        android:layout_marginLeft="15dp"
+        android:hint="Gender"/>
+
+
+</RelativeLayout>
